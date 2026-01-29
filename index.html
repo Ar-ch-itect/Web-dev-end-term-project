@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BLÜM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="app">
+  <header>
+    <h1>BLÜM</h1>
+    <p>Organise gently. Progress beautifully.</p>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <section class="creator">
+    <input id="text" placeholder="Add something meaningful…">
+    <select id="category">
+      <option value="Task">Task</option>
+      <option value="Habit">Habit</option>
+      <option value="Goal">Goal</option>
+    </select>
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="date" id="dueDate">
+    <button id="add">Add</button>
+  </section>
+
+  <section class="metrics">
+    <div>
+      <h2 id="total">0</h2>
+      <span>Total</span>
+    </div>
+    <div>
+      <h2 id="completed">0</h2>
+      <span>Completed</span>
+    </div>
+    <div>
+      <h2 id="rate">0%</h2>
+      <span>Flow</span>
+    </div>
+
+    <div class="action-bar">
+      <button id="filterCompleted" class="pill">✔ Completed</button>
+      <button id="clearAll" class="pill danger">✖ Reset Space</button>
+    </div>
+  </section>
+
+  <section id="space"></section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
